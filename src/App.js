@@ -5,7 +5,8 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      Navegation is OK!
+        <img src={logo} className="App-logo" alt="logo" />
+        <br></br>Navegation is OK!
     </div>
   );
 }
