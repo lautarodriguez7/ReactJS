@@ -1,18 +1,17 @@
-import React from 'react';
+import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-        <img src={logo} className="App-logo" alt="logo" />
-        <nav className='navbar navbar-dark bg-dark'>
-          <a href='' className='text-white'>
-            Tasks
-          </a>
-        </nav>
-    </div>
-  );
-}
+import Navigation from './components/Navigation';
 
+class App extends Component {
+  render () { 
+    return (
+      <div className="App">
+        <Navigation />
+          <img src={logo} className="App-logo" alt="logo" />
+      </div>
+    );
+  }
+}
 export default App;
