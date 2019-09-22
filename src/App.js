@@ -6,7 +6,11 @@ function App() {
   return (
     <div className="App">
         <img src={logo} className="App-logo" alt="logo" />
-        <br></br>Navegation is OK!
+        <nav className='navbar navbar-dark bg-dark'>
+          <a href='' className='text-white'>
+            Tasks
+          </a>
+        </nav>
     </div>
   );
 }
