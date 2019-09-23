@@ -2,8 +2,25 @@ import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import { todos } from './todos.json';
+console.log(todos);
 class App extends Component {
+  constructor() {
+    super(); //Para heredar todos los componentes de React
+    this.state = {  //Crea el estado de este componente
+      todos
+    }
+  }
+  
   render () { 
+    this.state.todos.map((todo, i) => {
+      return (
+        <div className='card'>
+          { todo.title }
+        </div>
+      )
+    })
+
     return (
       <div className="App">
 
