@@ -8,7 +8,8 @@ class App extends Component {
   render () { 
     return (
       <div className="App">
-        <Navigation />
+        <Navigation titulo='Mi primer titulo'/>
+        <Navigation titulo='Mi segundo titulo'/>
           <img src={logo} className="App-logo" alt="logo" />
       </div>
     );
