@@ -15,15 +15,16 @@ class App extends Component {
   render () { 
     const todos = this.state.todos.map((todo, i) => {
       return (
-        <div className='card'>
+        <div className='col-md-4'>
+        <div className='card mt-4'>
           <div className='card-body'>
             <h3> { todo.title } </h3>
           </div>
           <div className='card-body'>
-          <p> { todo.description } Esto a parte</p>
+            <p> { todo.description } Esto a parte</p>
           </div>
-          </div>
-          
+        </div>
+      </div>  
       )
     })
 
@@ -35,7 +36,12 @@ class App extends Component {
                   Tasks
                 </a>
           </nav>
-          { todos }
+
+          <div className='container'>
+            <div className='row mt-4'>
+            { todos }
+            </div>
+          </div>
           <img src={logo} className="App-logo" alt="logo" />
       </div>
     );
