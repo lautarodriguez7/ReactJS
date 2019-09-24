@@ -25,6 +25,7 @@ class App extends Component {
           </div>
           <div className='card-body'>
             <p> { todo.description } </p>
+            <p> {todo.responsible} </p>
           </div>
         </div>
       </div>  
