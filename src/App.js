@@ -13,7 +13,7 @@ class App extends Component {
   }
   
   render () { 
-    this.state.todos.map((todo, i) => {
+    const todos = this.state.todos.map((todo, i) => {
       return (
         <div className='card'>
           { todo.title }
@@ -29,7 +29,7 @@ class App extends Component {
                   Tasks
                 </a>
           </nav>
-
+          { todos }
           <img src={logo} className="App-logo" alt="logo" />
       </div>
     );
