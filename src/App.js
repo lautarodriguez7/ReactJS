@@ -16,8 +16,14 @@ class App extends Component {
     const todos = this.state.todos.map((todo, i) => {
       return (
         <div className='card'>
-          { todo.title }
-        </div>
+          <div className='card-body'>
+            <h3> { todo.title } </h3>
+          </div>
+          <div className='card-body'>
+          <p> { todo.description } Esto a parte</p>
+          </div>
+          </div>
+          
       )
     })
 
