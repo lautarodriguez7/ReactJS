@@ -11,7 +11,7 @@ class App extends Component {
       todos
     }
   }
-  
+  //LINEA 42 Nos permite ver la cantidad de listas automaticamente del todo
   render () { 
     const todos = this.state.todos.map((todo, i) => {
       return (
@@ -38,6 +38,9 @@ class App extends Component {
       <nav className='navbar navbar-dark bg-dark'>
                 <a href='app.js' className='text-white'>
                   Tasks
+                  <span className='badge badge-pill badge-light ml-2'>
+                    {this.state.todos.length}  
+                  </span>
                 </a>
           </nav>
 
