@@ -2,7 +2,11 @@ import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+//data
 import { todos } from './todos.json';
+
+//subcomponentes
+import { todo } from './components/TodoForm';
 console.log(todos);
 class App extends Component {
   constructor() {
