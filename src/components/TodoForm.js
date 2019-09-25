@@ -13,8 +13,10 @@ class TodoForm extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
   handleInput(e) {
-      console.log(e.target.value, e.target.name);
-  }
+    const { value, name } = e.target;
+    this.setState({
+    })
+ }
   render() {
     return (
       <div className="card">

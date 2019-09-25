@@ -6,7 +6,8 @@ import './App.css';
 import { todos } from './todos.json';
 
 //subcomponentes
-import { todo } from './components/TodoForm';
+import TodoForm from './components/TodoForm.js';
+
 console.log(todos);
 class App extends Component {
   constructor() {
