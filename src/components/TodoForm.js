@@ -12,11 +12,26 @@ class TodoForm extends Component {
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
-  handleInput(e) {
-    const { value, name } = e.target;
+
+  handleSubmit(e) {
+    e.preventDefault();
+    this.props.onAddTodo(this.state);
     this.setState({
-    })
- }
+      title: '',
+      responsible: '',
+      description: '',
+      priority: 'low'
+    });
+  }
+
+  handleInputChange(e) {
+    const {value, name} = e.target;
+    console.log(value, name);
+    this.setState({
+      [name]: value
+    });
+  }
+
   render() {
     return (
       <div className="card">
